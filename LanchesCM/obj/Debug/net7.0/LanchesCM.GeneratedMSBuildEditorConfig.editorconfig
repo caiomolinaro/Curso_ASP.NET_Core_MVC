@@ -1,0 +1,49 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = LanchesCM
+build_property.RootNamespace = LanchesCM
+build_property.ProjectDir = C:\Users\cmoli\OneDrive\Área de Trabalho\DEV\PROJETOS\Curso_ASP.NET_Core_MVC\LanchesCM\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\cmoli\OneDrive\Área de Trabalho\DEV\PROJETOS\Curso_ASP.NET_Core_MVC\LanchesCM
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/cmoli/OneDrive/Área de Trabalho/DEV/PROJETOS/Curso_ASP.NET_Core_MVC/LanchesCM/Views/Home/Demo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZW1vLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cmoli/OneDrive/Área de Trabalho/DEV/PROJETOS/Curso_ASP.NET_Core_MVC/LanchesCM/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cmoli/OneDrive/Área de Trabalho/DEV/PROJETOS/Curso_ASP.NET_Core_MVC/LanchesCM/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cmoli/OneDrive/Área de Trabalho/DEV/PROJETOS/Curso_ASP.NET_Core_MVC/LanchesCM/Views/Shared/_Carousel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9DYXJvdXNlbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cmoli/OneDrive/Área de Trabalho/DEV/PROJETOS/Curso_ASP.NET_Core_MVC/LanchesCM/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cmoli/OneDrive/Área de Trabalho/DEV/PROJETOS/Curso_ASP.NET_Core_MVC/LanchesCM/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cmoli/OneDrive/Área de Trabalho/DEV/PROJETOS/Curso_ASP.NET_Core_MVC/LanchesCM/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cmoli/OneDrive/Área de Trabalho/DEV/PROJETOS/Curso_ASP.NET_Core_MVC/LanchesCM/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-o62bg657q9
