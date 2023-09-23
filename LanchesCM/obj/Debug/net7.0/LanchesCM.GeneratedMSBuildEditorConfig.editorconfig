@@ -16,12 +16,12 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\cmoli\OneDrive\Área de Trabalho\DEV\PROJETOS\Curso_ASP.NET_Core_MVC\LanchesCM
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/cmoli/OneDrive/Área de Trabalho/DEV/PROJETOS/Curso_ASP.NET_Core_MVC/LanchesCM/Views/Home/Demo.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZW1vLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/cmoli/OneDrive/Área de Trabalho/DEV/PROJETOS/Curso_ASP.NET_Core_MVC/LanchesCM/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cmoli/OneDrive/Área de Trabalho/DEV/PROJETOS/Curso_ASP.NET_Core_MVC/LanchesCM/Views/Lanche/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFuY2hlXExpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/cmoli/OneDrive/Área de Trabalho/DEV/PROJETOS/Curso_ASP.NET_Core_MVC/LanchesCM/Views/Shared/Error.cshtml]
