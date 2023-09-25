@@ -25,6 +25,14 @@
       "PackagePath": "staticwebassets\\images\\carousel13.jpg"
     },
     {
+      "Id": "C:\\Users\\cmoli\\OneDrive\\Área de Trabalho\\DEV\\PROJETOS\\Curso_ASP.NET_Core_MVC\\LanchesCM\\wwwroot\\images\\iconecarrinho.png",
+      "PackagePath": "staticwebassets\\images\\iconecarrinho.png"
+    },
+    {
+      "Id": "C:\\Users\\cmoli\\OneDrive\\Área de Trabalho\\DEV\\PROJETOS\\Curso_ASP.NET_Core_MVC\\LanchesCM\\wwwroot\\images\\lixo.png",
+      "PackagePath": "staticwebassets\\images\\lixo.png"
+    },
+    {
       "Id": "C:\\Users\\cmoli\\OneDrive\\Área de Trabalho\\DEV\\PROJETOS\\Curso_ASP.NET_Core_MVC\\LanchesCM\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

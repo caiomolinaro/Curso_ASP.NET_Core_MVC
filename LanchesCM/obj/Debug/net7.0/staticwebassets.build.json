@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "jxIFhSSvDfFuo2Di0CbZicp613hGR3ZfLQjscfevtfY=",
+  "Hash": "gq3gD84kEkl192H8DKyvcV13KEtqWHBPshJol4tyJxg=",
   "Source": "LanchesCM",
   "BasePath": "_content/LanchesCM",
   "Mode": "Default",
@@ -134,6 +134,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\carousel13.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\cmoli\\OneDrive\\Área de Trabalho\\DEV\\PROJETOS\\Curso_ASP.NET_Core_MVC\\LanchesCM\\wwwroot\\images\\iconecarrinho.png",
+      "SourceId": "LanchesCM",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\cmoli\\OneDrive\\Área de Trabalho\\DEV\\PROJETOS\\Curso_ASP.NET_Core_MVC\\LanchesCM\\wwwroot\\",
+      "BasePath": "_content/LanchesCM",
+      "RelativePath": "images/iconecarrinho.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\iconecarrinho.png"
+    },
+    {
+      "Identity": "C:\\Users\\cmoli\\OneDrive\\Área de Trabalho\\DEV\\PROJETOS\\Curso_ASP.NET_Core_MVC\\LanchesCM\\wwwroot\\images\\lixo.png",
+      "SourceId": "LanchesCM",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\cmoli\\OneDrive\\Área de Trabalho\\DEV\\PROJETOS\\Curso_ASP.NET_Core_MVC\\LanchesCM\\wwwroot\\",
+      "BasePath": "_content/LanchesCM",
+      "RelativePath": "images/lixo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\lixo.png"
     },
     {
       "Identity": "C:\\Users\\cmoli\\OneDrive\\Área de Trabalho\\DEV\\PROJETOS\\Curso_ASP.NET_Core_MVC\\LanchesCM\\wwwroot\\js\\site.js",
