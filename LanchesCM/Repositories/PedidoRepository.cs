@@ -1,0 +1,41 @@
+﻿using LanchesCM.Context;
+using LanchesCM.Models;
+using LanchesCM.Repositories.Interfaces;
+
+namespace LanchesCM.Repositories
+{
+    public class PedidoRepository : IPedidoRepository
+    {
+
+        private readonly AppDbContext _appDbContext;
+        private readonly CarrinhoCompra _carrinhoCompra;
+
+        public PedidoRepository(AppDbContext appDbContext, CarrinhoCompra carrinhoCompra)
+        {
+            _appDbContext = appDbContext;
+            _carrinhoCompra = carrinhoCompra;
+        }
+
+        public void CriarPedido(Pedido pedido)
+        {
+            pedido.PedidoEnviado = DateTime.Now;
+            _appDbContext.Pedidos.Add(pedido);
+            _appDbContext.SaveChanges();
+
+            var carrinhoCompraItems = _carrinhoCompra.CarrinhoCompraItems;
+
+            foreach(var carrinhoItem in carrinhoCompraItems)
+            {
+                var pedidoDeatil = new PedidoDetalhe()
+                {
+                    Quantidade = carrinhoItem.Quantidade,
+                    LancheId = carrinhoItem.Lanche.LancheId,
+                    PedidoId = pedido.PedidoId,
+                    Preco = carrinhoItem.Lanche.Preco
+                };
+                _appDbContext.PedidoDetalhes.Add(pedidoDeatil);
+            }
+            _appDbContext.SaveChanges();
+        }
+    }
+}
