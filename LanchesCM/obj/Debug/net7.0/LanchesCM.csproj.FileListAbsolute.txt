@@ -251,3 +251,9 @@ C:\Users\cmoli\OneDrive\Área de Trabalho\DEV\PROJETOS\Curso_ASP.NET_Core_MVC\La
 C:\Users\cmoli\OneDrive\Área de Trabalho\DEV\PROJETOS\Curso_ASP.NET_Core_MVC\LanchesCM\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\cmoli\OneDrive\Área de Trabalho\DEV\PROJETOS\Curso_ASP.NET_Core_MVC\LanchesCM\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\cmoli\OneDrive\Área de Trabalho\DEV\PROJETOS\Curso_ASP.NET_Core_MVC\LanchesCM\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\cmoli\OneDrive\Área de Trabalho\DEV\PROJETOS\Curso_ASP.NET_Core_MVC\LanchesCM\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\cmoli\OneDrive\Área de Trabalho\DEV\PROJETOS\Curso_ASP.NET_Core_MVC\LanchesCM\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\cmoli\OneDrive\Área de Trabalho\DEV\PROJETOS\Curso_ASP.NET_Core_MVC\LanchesCM\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\cmoli\OneDrive\Área de Trabalho\DEV\PROJETOS\Curso_ASP.NET_Core_MVC\LanchesCM\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\cmoli\OneDrive\Área de Trabalho\DEV\PROJETOS\Curso_ASP.NET_Core_MVC\LanchesCM\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\cmoli\OneDrive\Área de Trabalho\DEV\PROJETOS\Curso_ASP.NET_Core_MVC\LanchesCM\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
