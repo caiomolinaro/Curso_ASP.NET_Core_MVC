@@ -8,6 +8,9 @@ using Microsoft.EntityFrameworkCore;
 using LanchesCM.Context;
 using LanchesCM.Models;
 using Microsoft.AspNetCore.Authorization;
+using ReflectionIT.Mvc.Paging;
+using Microsoft.AspNetCore.ResponseCompression;
+using LanchesCM.ViewModels;
 
 namespace LanchesCM.Areas.Admin.Controllers
 {
@@ -23,11 +26,47 @@ namespace LanchesCM.Areas.Admin.Controllers
             _context = context;
         }
 
-        // GET: Admin/AdminPedidos
-        public async Task<IActionResult> Index()
+        public IActionResult PedidoLanches(int? id)
         {
-              return View(await _context.Pedidos.ToListAsync());
+            var pedido = _context.Pedidos
+                         .Include(pd => pd.PedidoItens)
+                         .ThenInclude(l => l.Lanche)
+                         .FirstOrDefault(p => p.PedidoId == id);
+
+            if (pedido == null)
+            {
+                Response.StatusCode = 404;
+                return View("PedidoNotFound", id.Value);
+            }
+
+            PedidoLancheViewModel pedidoLanches = new PedidoLancheViewModel()
+            {
+                Pedido = pedido,
+                PedidoDetalhes = pedido.PedidoItens
+            };
+            return View(pedidoLanches);
         }
+
+        // GET: Admin/AdminPedidos
+        //public async Task<IActionResult> Index()
+        //{
+        //      return View(await _context.Pedidos.ToListAsync());
+        //}
+
+        public async Task<IActionResult> Index(string filter, int pageindex = 1, string sort = "Nome")
+        {
+            var resultado = _context.Pedidos.AsNoTracking().AsQueryable();
+
+            if(!string.IsNullOrWhiteSpace(filter))
+            {
+                resultado = resultado.Where(p => p.Nome.Contains(filter));
+            }
+
+            var model = await PagingList.CreateAsync(resultado, 5, pageindex, sort, "Nome");
+            model.RouteValue = new RouteValueDictionary { { "filter", filter } };
+            return View(model);
+        }
+
 
         // GET: Admin/AdminPedidos/Details/5
         public async Task<IActionResult> Details(int? id)
@@ -58,7 +97,8 @@ namespace LanchesCM.Areas.Admin.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("PedidoId,Nome,Sobrenome,Endereco1,Endereco2,Cep,Estado,Cidade,Telefone,Email,PedidoEnviado,PedidoEntregueEm")] Pedido pedido)
+        public async Task<IActionResult> Create([Bind("PedidoId,Nome,Sobrenome,Endereco1,Endereco2," +
+            "Cep,Estado,Cidade,Telefone,Email,PedidoEnviado,PedidoEntregueEm")] Pedido pedido)
         {
             if (ModelState.IsValid)
             {
@@ -90,7 +130,8 @@ namespace LanchesCM.Areas.Admin.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("PedidoId,Nome,Sobrenome,Endereco1,Endereco2,Cep,Estado,Cidade,Telefone,Email,PedidoEnviado,PedidoEntregueEm")] Pedido pedido)
+        public async Task<IActionResult> Edit(int id, [Bind("PedidoId,Nome,Sobrenome,Endereco1,Endereco2," +
+            "Cep,Estado,Cidade,Telefone,Email,PedidoEnviado,PedidoEntregueEm")] Pedido pedido)
         {
             if (id != pedido.PedidoId)
             {

@@ -1,4 +1,5 @@
-﻿using LanchesCM.Context;
+﻿using LanchesCM.Areas.Admin.Services;
+using LanchesCM.Context;
 using LanchesCM.Models;
 using LanchesCM.Repositories;
 using LanchesCM.Repositories.Interfaces;
@@ -7,6 +8,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using ReflectionIT.Mvc.Paging;
 
 namespace LanchesCM;
 public class Startup
@@ -23,7 +25,7 @@ public class Startup
         services.AddDbContext<AppDbContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
-        services.AddIdentity<IdentityUser, IdentityRole>()
+        services.AddIdentity<IdentityUser, IdentityRole>() 
              .AddEntityFrameworkStores<AppDbContext>()
              .AddDefaultTokenProviders();
 
@@ -31,6 +33,7 @@ public class Startup
         services.AddTransient<ICategoriaRepository, CategoriaRepository>();
         services.AddTransient<IPedidoRepository, PedidoRepository>();
         services.AddScoped<ISeedUserRoleInitial, SeedUserRoleInitial>();
+        services.AddScoped<RelatorioVendasService>();
 
         services.AddAuthorization(options =>
         {
@@ -45,6 +48,13 @@ public class Startup
         services.AddScoped(sp => CarrinhoCompra.GetCarrinho(sp));
 
         services.AddControllersWithViews();
+
+        services.AddPaging(options =>
+
+        {
+            options.ViewName = "Bootstrap5";
+            options.PageParameterName = "pageindex";
+        });
 
         services.AddMemoryCache();
         //services.AddDistributedMemoryCache();
