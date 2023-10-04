@@ -53,14 +53,6 @@
       "PackagePath": "staticwebassets\\images\\phone-app-icon.png"
     },
     {
-      "Id": "C:\\Users\\cmoli\\OneDrive\\Área de Trabalho\\DEV\\PROJETOS\\Curso_ASP.NET_Core_MVC\\LanchesCM\\wwwroot\\images\\produtos\\lanchenatural.jpg",
-      "PackagePath": "staticwebassets\\images\\produtos\\lanchenatural.jpg"
-    },
-    {
-      "Id": "C:\\Users\\cmoli\\OneDrive\\Área de Trabalho\\DEV\\PROJETOS\\Curso_ASP.NET_Core_MVC\\LanchesCM\\wwwroot\\images\\produtos\\mistoquente4.jpg",
-      "PackagePath": "staticwebassets\\images\\produtos\\mistoquente4.jpg"
-    },
-    {
       "Id": "C:\\Users\\cmoli\\OneDrive\\Área de Trabalho\\DEV\\PROJETOS\\Curso_ASP.NET_Core_MVC\\LanchesCM\\wwwroot\\images\\upload2.png",
       "PackagePath": "staticwebassets\\images\\upload2.png"
     },

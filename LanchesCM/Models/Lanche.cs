@@ -50,7 +50,5 @@ namespace LanchesCM.Models
 
         public virtual Categoria Categoria { get; set; }        
 
-
-
     }
 }
